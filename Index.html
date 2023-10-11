@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.CSS" />
+  </head>
+  <body>
+    <div class="points"></div>
+    <div class="body">
+      <table class="addTaskForm">
+  <tr>
+    <td class="inputs">
+      <label for="Name">Name:</label>
+    </td>
+    <td class="inputs">
+      <input type="text" name="Name" id="Name" placeholder="Name" />
+    </td>
+  </tr>
+  <tr>
+    <td class="inputs">
+      <label for="Desc">Description:</label>
+    </td>
+    <td class="inputs">
+      <textarea type="text" name="Desc" id="Desc" placeholder="Description"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="priorityContainer" colspan="2">
+      <ul class="priority">
+        <li>
+          <label for="Low">Low</label>
+          <input type="checkbox" name="Low" id="Low" />
+        </li>
+        <li>
+          <label for="Medium">Medium</label>
+          <input type="checkbox" name="Medium" id="Medium" />
+        </li>
+        <li>
+          <label for="High">High</label>
+          <input type="checkbox" name="High" id="High" />
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <button id="Submit">Submit</button>
+    </td>
+  </tr>
+</table>
+
+
+      <div class="container">
+        <div class="header">
+          <img src="./check1.webp" alt="" />
+          <h1 class="head">To-do List</h1>
+        </div>
+        <button id="addTask">Add Task</button>
+        <button id ='reset'>Reset</button>
+        <table>
+          <thead>
+            <tr>
+              <th >Team Member</th>
+              <th >Task</th>
+              <th >Priority</th>
+              <th >Actions</th>
+            </tr>
+          </thead>
+          </hr>
+          <tbody class="tasks-table"></tbody>
+        </table>
+        <div class="tasks"></div>
+      </div>
+    </div>
+  </body>
+  <script src="Index.js"></script>
+</html>

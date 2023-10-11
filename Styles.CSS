@@ -1,0 +1,138 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.685);
+  align-items: center;
+  justify-content: center;
+  color: rgba(70, 67, 67, 0.87);
+}
+.header {
+  text-align: center;
+}
+.header > img {
+  height: 50px;
+}
+.container {
+  background: rgb(186, 208, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(186, 208, 226, 1) 0%,
+    rgba(202, 212, 219, 1) 48%,
+    rgba(136, 141, 153, 1) 100%
+  );
+  /* height: 90vh; */
+  width: 80vh;
+  position: relative;
+  top: 10vh;
+  left: 60vh;
+  /* transform: translate(-50%, -50%); */
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 10px;
+  height: auto;
+  /* width: auto; */
+}
+/* .taskHeadsContainer {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-left: 15px;
+} */
+hr {
+  border: 1px solid White;
+}
+
+/* #Desc {
+  height: 200px;
+  border-radius: 4px;
+  margin-left: 20px;
+} */
+
+.inputs {
+  margin-left: 5px;
+  display: inline-block;
+}
+/* .tasks {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-left: 15px;
+} */
+
+.container > table {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 13px;
+  /* height: 100%; */
+  table-layout: auto;
+  font-family: cursive;
+}
+
+.container > td {
+  /* border: 1px solid black; */
+  text-align: center;
+  justify-content: center;
+  padding: 2px;
+  /* justify-content: space-around; */
+  width: 20px;
+  height: auto;
+}
+th {
+  text-align: center;
+  padding: 20px;
+  /* justify-content: space-around; */
+  border-bottom: 2px solid white;
+}
+.container > thead {
+  border-bottom: 2px solid white;
+}
+
+.priority {
+  list-style-type: none;
+}
+.addTaskForm {
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.685);
+  color: black;
+  border-radius: 10px;
+  box-shadow: 10px black;
+  justify-content: center;
+  position: relative;
+  max-width: 300px;
+  padding: 10px;
+  left: 70vh;
+  top: 18vh;
+  display: none;
+}
+
+.addTaskForm input[type="text"],
+textarea[type="text"] {
+  width: 100%;
+  padding: 15px, 0px, 5px;
+  /* margin: 5px 0 22px 0; */
+  border: none;
+  /* background: #f1f1f1; */
+}
+/* .addTaskForm input[type="text"],
+textarea[type="text"]:focus {
+  border: 2px black solid;
+  outline: none;
+ 
+} */
+#pointsStyle {
+  width: 100px;
+  height: 20px;
+  background-color: rgba(255, 252, 252, 0.808);
+  border-radius: 100px;
+  padding: 10px;
+}
+
+#showCompleted {
+  position: relative;
+  left: 200px;
+}
