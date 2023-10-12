@@ -177,18 +177,6 @@ localStorage.setItem("Points", pointsString);
 
 
 
-// Reset everything
-resetBtn.addEventListener('click', () => {
-  localStorage.removeItem('tasks');
-  localStorage.removeItem('completedTasks');
-  localStorage.removeItem('Points');
-  points = 0;
-  instances.splice(0, instances.length);
-  CompletedTasksArray.splice(0, CompletedTasksArray.length)
-  pointsDiv.removeAttribute("id", "pointsStyle");
-  pointsDiv.innerHTML = ``;
-  updateDom();
-})
 
 
 
@@ -216,5 +204,20 @@ resetBtn.addEventListener('click', () => {
   }
   updateDom();
 })();
+
+
+// Reset everything
+resetBtn.addEventListener('click', () => {
+  localStorage.removeItem('tasks');
+  localStorage.removeItem('completedTasks');
+  localStorage.removeItem('Points');
+  points = 0;
+  instances.splice(0, instances.length);
+  CompletedTasksArray.splice(0, CompletedTasksArray.length)
+  pointsDiv.removeAttribute("id", "pointsStyle");
+  pointsDiv.innerHTML = ``;
+  updateDom();
+})
+
 
 
